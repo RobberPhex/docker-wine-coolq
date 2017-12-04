@@ -47,5 +47,3 @@ ENV LANG=zh_CN.UTF-8 \
 COPY vncmain.sh /app/vncmain.sh
 COPY cq /usr/local/bin/cq
 COPY cont-init.d /etc/cont-init.d/
-
-VOLUME ["/home/user/coolq"]
