@@ -20,6 +20,9 @@ RUN apt-get update && \
 COPY winhttp_2ksp4.verb /tmp/winhttp_2ksp4.verb
 COPY coolq.reg /tmp/coolq.reg
 COPY luna.msstyles /tmp/luna.msstyles
+COPY CQP.cfg /home/user/CQP.cfg
+COPY app/io.github.richardchien.coolqhttpapi/config.cfg \
+     /home/user/app/io.github.richardchien.coolqhttpapi/config.cfg
 
 RUN sudo -Hu user WINEARCH=win32 /usr/bin/wine wineboot && \
     sudo -Hu user mkdir -p /home/user/.wine/drive_c/windows/Resources/Themes/luna/ && \
