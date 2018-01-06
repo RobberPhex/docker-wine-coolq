@@ -11,7 +11,7 @@ else
     LC_ALL=zh_CN.UTF-8 unzip coolq.zip > /dev/null
     mv */* /home/user/coolq
     chown -R user:user /home/user/coolq
-    wget https://github.com/richardchien/coolq-http-api/releases/download/v3.3.1/io.github.richardchien.coolqhttpapi.cpk \
+    wget https://github.com/richardchien/coolq-http-api/releases/download/v3.3.3/io.github.richardchien.coolqhttpapi.cpk \
       -O /home/user/coolq/app/io.github.richardchien.coolqhttpapi.cpk
     rm -rf /tmp/cq
     sed "s/<QQ_id>/$COOLQ_ACCOUNT/g" /home/user/CQP.cfg > /home/user/coolq/conf/CQP.cfg
